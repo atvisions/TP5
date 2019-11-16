@@ -9,8 +9,8 @@ class Index extends \think\Controller
     public function index( \think\request $request)
     {
         //查找,查询模型要注意：不要使用（），要使用大写 。要带命名空间
-        $row = \app\index\model\Test::where('id','>','1')->select();
-        echo "<pre>";
+        //$row = \app\index\model\Test::where('id','>','1')->select();
+        //echo "<pre>";
         //var_dump($row);
         //插入 
         // $data = [
@@ -26,7 +26,7 @@ class Index extends \think\Controller
         //
         //
         //
-        var_dump($request->get('aaa'));
+        //var_dump($request->get('aaa'));
         // ?aaa=xxxxx
     }
 
@@ -35,8 +35,8 @@ class Index extends \think\Controller
         return 'hello,' . $name;
     }
 
-    public function login()
+    public function default()
     {
-        return 'login';
+        return redirect('/gbook');
     }
 }
