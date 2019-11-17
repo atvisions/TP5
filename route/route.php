@@ -17,11 +17,31 @@ Route::get('gbook/delete/:id', 'index/gbook/delete');
 //留言本首页路由
 Route::get('gbook', 'index/gbook/index');
 
-//后台
-Route::get('admin/index', 'admin/index/index');
-//后台登录,长地址在上面
-Route::post('admin/login/check', 'admin/login/check');
-Route::get('admin/login', 'admin/login/index');
+Route::group('admin', function () {
+    //后台首页
+	Route::get('/', 'admin/index/index');
+	//后台登录,长地址在上面
+	Route::group('login', function () {
+		Route::get('/', 'admin/login/index');
+		Route::post('/check', 'admin/login/check');
+		Route::get('/logout', 'admin/login/logout');
+	});
+	
+	Route::group('auser', function () {
+		//管理员管理
+		Route::get('/index', 'admin/auser/index');
+		Route::get('/add', 'admin/auser/add');
+		Route::post('/save', 'admin/auser/save');
+		Route::get('/modify', 'admin/auser/modify');
+		Route::get('/del', 'admin/auser/del');
+	});
+
+	
+});
+
+
+
+
 //空首页路由
 Route::get('/', 'index/default');
 

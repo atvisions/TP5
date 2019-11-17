@@ -17,13 +17,14 @@
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-4 well" style="margin-top:200px">
 				<form action="{:url('admin/login/check')}" method="post">
+				{:token()}
 					<div class="form-group">
-					<label for="exampleInputEmail1">用户名</label>
-					<input type="email" class="form-control" id="exampleInputEmail1" placeholder="输入用户名" name="admin_user">
+					<label for="username">用户名</label>
+					<input type="text" class="form-control" id="username" placeholder="输入用户名" name="username">
 					</div>
 					<div class="form-group">
-					<label for="exampleInputPassword1">密码</label>
-					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="输入管理员密码" name="admin_pwd">
+					<label for="password">密码</label>
+					<input type="password" class="form-control" id="password" placeholder="输入管理员密码" name="password">
 					</div>
 
 
