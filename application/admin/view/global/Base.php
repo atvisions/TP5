@@ -2,7 +2,7 @@
 <html lang="zh-CN">
  	<head>
 
-<title>我的留言本</title>
+<title>{$webname}{block name='webname'}{/block}</title>
 <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
@@ -32,12 +32,7 @@
                   <li class="active"><a href="#">保留2 <span class="sr-only">(current)</span></a></li>
                   <li><a href="#">保留1</a></li>
               </ul>
-              <form class="navbar-form navbar-left">
-                  <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                  </div>
-                  <button type="submit" class="btn btn-default">Submit</button>
-              </form>
+
               <ul class="nav navbar-nav navbar-right">
                   <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$user->username} <span class="caret"></span></a>
@@ -55,7 +50,7 @@
             <div class="col-sm-2">
                 	<div class="list-group">
 						<a class="list-group-item active">系统设置</a>
-						<a href="#" class="list-group-item">基础设置</a>
+						<a href="{:url('setting/index')}" class="list-group-item">基础设置</a>
 						<a href="{:url('auser/index')}" class="list-group-item">管理员设置</a>
 					</div>
 

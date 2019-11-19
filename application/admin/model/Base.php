@@ -6,5 +6,5 @@ namespace app\admin\model;
 */
 class Base extends \think\Model
 {
-
+	
 }

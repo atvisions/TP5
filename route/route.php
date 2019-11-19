@@ -35,7 +35,11 @@ Route::group('admin', function () {
 		Route::get('/modify', 'admin/auser/modify');
 		Route::get('/del', 'admin/auser/del');
 	});
-
+	Route::group('setting', function () {
+		//管理员管理
+		Route::get('/index', 'admin/setting/index');
+		Route::post('/save', 'admin/setting/save');
+	});
 	
 });
 

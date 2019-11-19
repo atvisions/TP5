@@ -6,5 +6,5 @@ namespace app\common\model;
 */
 class Base extends \think\Model
 {
-
+	use \think\model\concern\SoftDelete;
 }
