@@ -1,7 +1,7 @@
 <?php
 namespace app\index\controller;
-
-class Gbook extends \think\Controller
+use app\index\model\Gbook as G;
+class Gbook extends Base
 {
 	public function index(){
 		//实例化查询构造器
@@ -24,7 +24,7 @@ class Gbook extends \think\Controller
 			"content" => $content, 
 		];
 		//实例化查询类
-		$gbook = new \app\index\model\Gbook();
+		$gbook = new G();
 		//插入到数据库
 		$gbook->save([
 			'username' => $username,
@@ -38,10 +38,6 @@ class Gbook extends \think\Controller
 		return redirect('index/gbook/index');
 	}
 
-	public function delete($id){
-		//实例化查询构造器
-		$gbook = new \app\index\model\Gbook();
-		$gbook->where('id',$id)->delete();
-		return redirect('index/gbook/index');
-	}
+
+
 }

@@ -3,7 +3,9 @@ namespace app\admin\controller;
 
 class Setting extends Base
 {
+    //构造函数
 	function initialize(){
+        //先执行父类的构造函数
 		parent::initialize();
 		$this->setting = new \app\common\model\Setting();
 

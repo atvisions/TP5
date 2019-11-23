@@ -67,7 +67,12 @@ class Auser extends Base{
 		if((int)$id === $admin_id){
 			return $this->error('不能删除自己');
 		}else{
+			
+			try{
 			$au->remove($id);
+			}catch(\exception $e){
+				return $this->error( $e->getMessage());
+			}
 		}		
 		
 		//跳转

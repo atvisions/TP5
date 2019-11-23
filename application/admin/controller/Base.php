@@ -19,8 +19,10 @@ class Base extends \think\Controller
     	if(!$user){
     		return $this->error("需要登录后操作");
     	};
+        //赋值类属性，方便子控制器调用
+        $this->user = $user;
     	$this->assign('user',$user);
-        //$webname = \app\facade\Setting::get('webname');
+        //调用application\common 公共文件   
         $this->assign('webname',setting('webname'));
 	}
 	

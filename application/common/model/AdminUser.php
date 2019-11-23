@@ -7,7 +7,7 @@ class AdminUser extends Base {
 		$validate = new \app\common\validate\AdminLogin();
 		$scene = $r['id'] ? 'modify' :  'add';
 		if( !$validate->scene($scene)->check($r)){
-			return exception($validate->getError(),10002); 
+			return exception($validate->getError(),10001); 
 		}
 
 		$au = $this;
@@ -32,7 +32,7 @@ class AdminUser extends Base {
 		$item = $this->where('id',$id)->find();
 		
 		if(!$item){
-			return $this->error('数据不存在');
+			return exception('数据不存在',10002);
 		};
 		
 		$item->delete();

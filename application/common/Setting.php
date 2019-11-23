@@ -15,6 +15,7 @@ class Setting{
 			if($list === false){
 				$setting = new \app\common\model\Setting();
 				$list = [];
+				//通过each方法，将数据集数据转换成二维数组，使用& 引用list，在function中会直接操作外部的list数据
 				$setting->select()->each(function($item , $k)use(&$list){
 					$list[$item->key] = $item;
 				});

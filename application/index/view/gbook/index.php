@@ -1,15 +1,7 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<title>我的留言本</title>
-<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+{extend name='global/Base'};
+{block name='typename'}留言本{/block}
+{block name='main'}
 
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-</head>
-<body>
 	<div class="container " style="width:800px;margin-top:50px;">
 		<div class="row">
 			<div class="col-md-12">
@@ -41,7 +33,7 @@
 					<div class="row">
 					<div class="col-md-3">{$row.username}</div>
 					<div class="col-md-3"></div>
-					<div class="col-md-6"><em class="pull-right"><a href="/gbook/delete/{$row.id}" onclick= "return confirm('是否确定删除？');">删除</a></em><span class="pull-right">2018-12-16 18:00:0</span></div>
+					<div class="col-md-6"><span class="pull-right">2018-12-16 18:00:0</span></div>
 					<div class="col-md-12">{$row.content}</div>
 				</div>
 			</div>
@@ -50,5 +42,4 @@
 			</div>	
 		</div>
 	</div>
-</body>
-</html>
+{/block}	

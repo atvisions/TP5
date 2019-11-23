@@ -8,7 +8,7 @@
 <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+{block name='header'}{/block}
  	</head>
 
 <body>
@@ -56,12 +56,13 @@
 
 					<div class="list-group">
 						<a class="list-group-item active">用户管理</a>
-						<a href="#" class="list-group-item">所有用户</a>
+						<a href="{:url('user/index')}" class="list-group-item">所有用户</a>
 					</div>
 
 					<div class="list-group">
 						<a class="list-group-item active">内容管理</a>
-						<a href="#" class="list-group-item">所有内容</a>
+						<a href="{:url('content/index')}" class="list-group-item">新闻管理</a>
+            <a href="{:url('gbook/index')}#" class="list-group-item">留言管理</a>
 					</div>
             </div>
             <div class="col-sm-10">{block name="content"}留给后台{/block}</div>  
