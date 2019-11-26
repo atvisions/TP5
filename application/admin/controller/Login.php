@@ -1,6 +1,6 @@
 <?php
 namespace app\admin\controller;
-
+use think\Request;
 
 //这里不能继承Base，因为登录页不需要验证session
 class Login extends \think\Controller
@@ -12,10 +12,14 @@ class Login extends \think\Controller
 	}
 	public function check()
 	{
-		//验证账号密码是否为空;
-		$r['username'] = $this->request->post('username');
-		$r['password'] = $this->request->post('password');
-		$r['__token__'] = $this->request->post('__token__');	
+
+		$r = [
+			'username' => $this->request->post('username'),
+			'password' => $this->request->post('password'),
+			'__token__' => $this->request->post('__token__'),
+
+		];
+
 		//实例化验证器
 		$validate = new \app\common\validate\AdminLogin();
 		if( !$validate->check($r)){
@@ -33,7 +37,17 @@ class Login extends \think\Controller
 		}
 		//写入Session
 		\think\facade\Session::set('admin_id',$user->id);
+
+		$request = new Request();
+		//保存登录信息
+		$result = $user->save([
+    		'loginip' => $request->ip(),
+			'logintime' => date('Y-m-d H:i:s'),
+    	]);
+		
+
 		return $this->redirect('/admin');
+
 	}
 	public function logout(){
 		\think\facade\Session::delete('admin_id');

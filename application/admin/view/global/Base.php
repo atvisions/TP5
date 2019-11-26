@@ -29,8 +29,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
-                  <li class="active"><a href="#">保留2 <span class="sr-only">(current)</span></a></li>
-                  <li><a href="#">保留1</a></li>
+                  <li class="active"><a href="{:url('admin/index/index')}">系统首页 <span class="sr-only">(current)</span></a></li>
+                  <li><a href="{:url('index/default')}" target="_blank">网站首页</a></li>
               </ul>
 
               <ul class="nav navbar-nav navbar-right">
