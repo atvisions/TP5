@@ -1,0 +1,108 @@
+@media screen and (min-width: 1200px) { 
+/*
+mod_pc style
+*/
+/* th_list */
+#th_list .articleBox {float:left;width:860px;overflow:hidden;background:#fff;border-radius: 10px;padding:20px;border-top:1px solid #ccc}
+#th_list .articleBox .articleList  {width:100%;min-height:500px;margin:0 auto;overflow:hidden}
+#th_list .articleBox .articleList .relevant {overflow:hidden;font-size:16px;}
+#th_list .articleBox .articleList .relevant h1 {float:left;font-weight:bold}
+#th_list .articleBox .articleList .relevant h1:before {
+	content: "“";
+}
+#th_list .articleBox .articleList .relevant h1:after {
+	content: "”";
+}
+
+/* 右侧文章列表 */
+#th_list .article_right {display:block;float:right;width:290px;border-top:1px solid #ccc!important;background:#fff;overflow:hidden;border-radius: 10px;}
+
+/* th  */
+#th .articleBox {width:1170px;overflow:hidden;background:#fff;padding:15px;border-radius: 10px;overflow:hidden;border-top:1px solid #ccc}
+#th .articleBox .articleList {width:1200px;}
+#th .articleBox .articleList .relevant {overflow:hidden;font-size:16px;padding:5px;margin-bottom:10px}
+#th .articleBox .articleList .relevant h1 {float:left;font-weight:bold}
+#th .articleBox .articleList .relevant h1:before {
+	content: "“";
+}
+#th .articleBox .articleList .relevant h1:after {
+	content: "”";
+}
+#th .modular_article_list {float:left;width:280px;padding:0;margin-right:16px;overflow:hidden;margin-bottom:20px;border:0;border-radius: 10px;overflow:hidden;background:#eee;}
+#th .modular_article_list:hover {border-radius: 10px;transition:all 0.5s;-webkit-transition:all 0.5s;-ms-transition:all 0.5s;overflow:hidden}
+#th .modular_article_list .img {float:left;width:280px;height:206px;margin-bottom:10px;margin-left:0;position:relative;border-radius: 10px 10px 0 0;}
+#th .modular_article_list .img img {width:280px;height:206px;}
+
+#th .modular_article_list .img .columnTag {position:absolute;bottom:0;left:0;width:100%;height:30px;line-height:30px;text-align:center}
+#th .modular_article_list .img .columnTag a {background-color:rgba(0,0,0,0.5);width:100%!important;height:30px!important;color:#eee;border-radius: 0 0 0 0 ;}
+#th .modular_article_list .img .columnTag a:hover {background-color:rgba(0,0,0,0.7);color:#fff} 
+#th .modular_article_list .img a {display:inline-block;width:160px;height:120px;}
+#th .modular_article_list .text {float:left;width:280px;height:100px;margin-left:10px}
+#th .modular_article_list .text h2 {font-size:14px;}
+#th .modular_article_list .text p {display:none}
+#th .modular_article_list .author {float:left;width:100%;overflow:hidden;}
+#th .modular_article_list .tags {display:none}
+#th .modular_article_list .info {float:left}
+#th .modular_article_list .info li {float:left;line-height:30px;margin-right:10px;font-size:12px;}
+#th .article_right {width:100%;overflow:hidden;background:#fff;border-radius: 10px;margin-top:10px;}
+#th .article_right .main {width:1200px;padding:10px 0 10px 5px}
+#th .article_right .modular_box {width:100%}
+#th .article_right .modular_box dl {float:left;width:350px;padding:10px;margin-right:15px;transition:background 0.5s;background:#f9f9f9;border-radius: 5px;}
+#th .article_right .modular_box dl:hover {background:#fff;box-shadow: 0 0 10px #666;}
+#th .article_right .modular_box dl dt {width:100%;margin-bottom:10px;display:block;overflow:hidden}
+#th .article_right .modular_box dl dd {width:100%;padding-left:10px;margin-bottom:10px;background:url(../images/sqpurple.gif) no-repeat 3px 10px}
+#th .ads01 {display:none}
+
+/*menuMain*/
+.menuMain {width:1200px;padding:20px 0;margin:0 auto;height:40px;}
+.menuMain .category {float:left;}
+.menuMain .category li {float:left;margin-right:20px;}
+.menuMain .category li a {display:inline-block;padding:3px 15px;height:28px;line-height:28px;border-radius: 5px;background:#ddd;}
+.menuMain .category li.active a {background:#E31726;color:#fff}
+.menuMain .chil_category {float:left;border-left:1px solid #ccc;margin-top:4px;padding-left:15px;}
+.menuMain .chil_category li {float:left;height:20px;line-height:20px;background:url(../images/sqpurple.gif) no-repeat 2px 10px;padding-left:10px;margin-right:20px}
+.menuMain .chil_category li.active a {color:#C51421}
+.menuMain .style {float:right;border:1px solid #ccc;border-radius: 5px;overflow:hidden}
+.menuMain .style li {float:left;width:36px;padding:5px 0;text-align:center;cursor:pointer}
+.menuMain .style li.active {background:#fff;color:#C51421}
+.menuMain .style li i {font-size:14px!important}
+.menuMain .apply {float:right;width:80px;text-align:center;height:28px;line-height:28px;border-radius: 5px;border:0;background:#E31726;color:#fff;cursor:pointer}
+.menuMain .apply:hover {background:#C51421}
+.menuMain .num {float:right;padding:5px 10px;height:28px;line-height:28px;font-size:14px;margin-top:-5px;}
+.menuMain .num strong {font-family: Tahoma!important;color:#C51421}
+.menuMain .sort {float:left;margin-right:20px;position:relative;background:#E31726;color:#fff;border-radius: 5px;z-index:1}
+.menuMain .sort li {float:right;color:#fff;width:60px;display:inline-block;padding:0 5px 0 15px;text-align:left;height:28px;line-height:28px;}
+.menuMain .sort li i {margin-left:5px;}
+.menuMain .sort li:hover ol{display:block}
+.menuMain .sort ol {display:none;background:#E31726;position:absolute;top:28px;left:0;border-radius: 5px;overflow:hidden;border-top:1px solid #eee}
+.menuMain .sort ol li:hover {background:#C51421;cursor:pointer}
+.menuMain .crumbs {float:left;}
+.menuMain .crumbs li {display:inline-block;margin:0 10px}
+.menuMain .crumbs li i {margin-right:5px;height:20px;line-height:20px;text-align:center;font-size:12px;width:20px;background:#333;color:#fff;border-radius: 50px;}
+.menuMain .rightSearch {float:right}
+
+} 
+
+@media screen and (max-width: 1199px) { 
+/*
+mod_mobi style
+*/
+/* th_list */
+#th_list .articleBox {float:left;width:100%;overflow:hidden;background:#fff;padding-top:10px;}
+#th_list .articleBox .articleList  {width:100%;margin:0 auto;overflow:hidden}
+#th_list .articleBox .articleList .relevant {display:none}
+
+/* th */
+#th .articleBox {float:left;width:100%;overflow:hidden;background:#fff;padding-top:10px;}
+#th .articleBox .articleList .relevant {display:none}
+#th .article_right {display:none}
+/* menuMain */
+.menuMain .category {float:left;width:100%;background:#fff;position:relative;line-height:36px;height:36px;padding:5px 0;display: -webkit-box;overflow-x: scroll;-webkit-overflow-scrolling:touch}
+.menuMain .category::-webkit-scrollbar{display:none}		
+.menuMain .category ul {width:auto;margin:0 10px;display: block; overflow: hidden; white-space:nowrap;}
+.menuMain .category li {display: inline-block;margin-right:20px;box-sizing: border-box;}
+.menuMain .category li a {display:inline-block;padding:3px 5px;height:28px;line-height:28px;}
+.menuMain .category li.active a {background:#eee;border-radius: 5px;padding:0 10px}
+.menuMain .style {display:none}
+} 
+

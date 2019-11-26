@@ -1,0 +1,157 @@
+@media screen and (min-width: 1200px) { 
+
+.articleBox {float:left;width:860px;border-top:1px solid #ccc;background:#fff;padding:10px;border-radius: 10px}
+.articleBox .articleTitle {overflow: hidden;margin:10px 30px 0 30px;padding-bottom:10px}
+.articleBox .articleTitle h1 {font-size:24px;font-weight: bold;line-height:26px;padding:20px 0}
+.articleBox .articleContent {padding:0 10px 0 10px;margin:0 20px 0 20px;}
+.articleBox .articleContent img {display: block;padding: 0;overflow:hidden;max-width: 800px;height: auto!important;position: relative;left: 50%;transform: translateX(-50%);-ms-transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);-o-transform: translateX(-50%);cursor: pointer;}
+
+/* 评论 */
+.comments {width:860px;border-top:1px solid #ddd;margin:0 10px 10px 10px;padding-top:30px}
+.commentsTop {width:830px;margin:20px 0 20px 15px;overflow:hidden}
+.commentsTop .userFace {float:left;width:80px;height:80px}
+.commentsTop .userFace img {width:80px;height:80px;border-radius: 100px;}
+.commentsTop .commentsText {float:right;width:720px;}
+.commentsTop textarea {width:698px;min-height:40px;height:40px;max-height: 1000px;border-radius:5px;border:1px solid #ddd;background:#eee;padding:10px;color:#666}
+.commentsTop .btn {width:100%;margin-top:10px;overflow:hidden}
+.commentsTop .textNum {float:left;line-height:36px;}
+.commentsTop .textNum span {font-weight: bold;color:#E31726}
+.commentsTop .commBtn {float:right}
+.commentsTop .commBtn button {float:right;width:120px;height:36px;line-height:36px;background:#E31726;border:0;color:#fff;border-radius:5px;cursor:pointer}
+.commentsTop .commBtn button:hover {background:#C51421}
+
+.commentsList {width:100%;border-top:1px solid #ddd}
+.commentsList .commentsTitle {position:relative;top:-10px;overflow:hidden;text-align: center;}
+.commentsList .commentsTitle h3 {float:left;background:#fff;width:120px;margin-left:20px}
+.commentsInfo {width:100%}
+.commentsInfo dl {margin:0 auto;padding:15px 15px 25px 15px;overflow:hidden;border-bottom:1px solid #eee}
+.commentsInfo dl:hover {background:#f9f9f9}
+.commentsInfo dt.userFace {float:left;width:80px;height:110px;border-radius: 5px;}
+.commentsInfo dt.userFace img {width:60px;height:60px;border-radius: 100px;margin:10px 0 0 10px}
+.commentsInfo dt.userFace p {width:80px;height:26px;margin-top:15px;line-height:26px;border-radius: 3px;}
+.commentsInfo dt.userFace p span {height:26px;background:#E31726;text-align:center;font-size:12px;cursor:pointer;color: #fff;}
+.commentsInfo dt.userFace p span:hover i {color:#fff}
+.commentsInfo dt.userFace p span.active i {color:#fff}
+.commentsInfo dt.userFace p span.active em {color:#fff}
+.commentsInfo dt.userFace p span.active {background:#333}
+.commentsInfo dt.userFace p span.up {float:left;width:62px;text-align:left;border-radius:5px 0 0 5px;}
+.commentsInfo dt.userFace p span.up i {margin:0 5px 0 10px}
+.commentsInfo dt.userFace p span.down {float:right;width:18px;border-radius: 0 5px 5px 0;}
+.commentsInfo dd {float:left;width:calc(100% - 110px);margin-left:20px;overflow:hidden}
+.commentsInfo dd i {margin-right:5px;}
+.commentsInfo dd.d1 span {float:left;font-weight: bold;}
+.commentsInfo dd.d1 em {float:right;}
+.commentsInfo dd.content {height:50px;padding:10px 0;overflow:hidden}
+.commentsInfo dd.content .at {border-left:3px solid #C51421;line-height:22px;margin:0 0 5px 0;padding-left:5px;color:#999}
+.commentsInfo dd.content .say {line-height:22px;margin:0 0 5px 0;}
+.commentsInfo dd.d3 span {margin-right:20px;font-size:12px}
+.commentsInfo dd.d3 .reply {cursor:pointer}
+.commentsInfo .commentsText  {float:right;width:calc(100% - 100px);margin-left:100px;margin-top:10px;position:relative;display:none}
+.commentsInfo .commentsText .textNum {position:absolute;right:120px;top:12px}
+.commentsInfo .commentsText textarea {float:left;width:600px;height:20px;border-radius:5px;border:1px solid #ddd;background:#eee;padding:10px;color:#666}
+.commentsInfo .commentsText .replyBtn {float:right;border:0;width:100px;height:42px;line-height:42px;border-radius:3px;width:80px;background:#E31726;color:#fff;cursor:pointer}
+.commentsInfo .commentsText .replyBtn:hover {background:#C51421}
+.commentsInfo dd.d4 .textNum {float:left;line-height:36px;}
+.commentsInfo dd.d4 .textNum span {font-weight: bold;color:#E31726}
+.commentsInfo dd.d4 .commBtn {float:right;text-align:right}
+.commentsInfo dd.d4 .commBtn button {float:right;display:inline-block;border:0;width:100px;height:36px;line-height:36px;border-radius:3px}
+.commentsInfo dd.d4 .commBtn .cancel {display:inline-block;margin-right:30px;line-height:36px;cursor:pointer}
+/* 文章右侧 */
+.article_right_box {float:right;width:280px;position:fixed;left:50%;margin-left:320px;}
+.article_right {float:right;width:260px;overflow:hidden;border-top:1px solid #ccc;background:#fff;padding:10px;border-radius: 10px;}
+.article_right .author {float:left;width:100%;overflow:hidden;padding:20px 0}
+.article_right .author ul {width:100%;text-align: center}
+.article_right .author ul img {width:100px;height:100px;border-radius: 50px;margin-bottom:20px;}
+.article_right .author ul li {display:block;width:100%;font-size:12px;}
+.article_right .author ul li.name {font-size:18px;font-weight: bold;}
+.article_right .authorInfo {float:left;width:100%;overflow:hidden}
+.article_right .authorInfo ul {width:100%;display:-webkit-flex;display:-moz-flex;display:flex;}
+.article_right .authorInfo ul li {flex:1 1;margin-right:1px;text-align:center;padding:5px 0}
+.article_right .authorInfo ul li p {color:#999}
+.article_right .authorInfo ul li span {font-weight: bold;font-family: Tahoma!important;}
+.article_right .authorInfo .btn {text-align:center}
+.article_right .authorInfo .btn li {display:inline-block;margin:10px;height:36px;line-height:36px;border:1px solid #EC414D;background:#EC414D;color:#fff;padding:0 10px;border-radius: 3px;cursor:pointer;}
+.article_right .authorInfo .btn li:hover {background:#C51421}
+.article_right .authorInfo .btn li i {margin-right:10px;}
+.article_right .authorInfo .btn li.mess {background:#fff;color:#EC414D;border:1px solid #EC414D}
+.article_right .authorInfo .btn li.mess:hover {background:#f9f9f9}
+.article_right .authorInfo dl {margin-top:10px;}
+.article_right .authorInfo dl dt {line-height:32px;font-size:14px;font-weight: bold;}
+.article_right .authorInfo dl dd {font-size:12px;padding-left:10px;margin-bottom:10px;display:inline-block;background:url(../images/sqpurple.gif) no-repeat 3px 10px}
+/* 文章右侧收藏、喜欢 */
+.article_right_box .article_operation {float:right;width:290px;margin-top:10px;background:#fff;padding:10px;border-radius: 10px;position:relative}
+.article_right_box .article_operation .ico {font-size:20px;width:20px;height:20px;z-index:999;color:#fff;position:absolute;left:-7px;top:calc(50% - 15px)}
+.article_right_box .article_operation ul {width:100%;display:-webkit-flex;display:-moz-flex;display:flex;}
+.article_right_box .article_operation ul li {flex:1 1;margin-right:1px;text-align:center;padding-top:5px;background:#eee;cursor:pointer;position:relative}
+.article_right_box .article_operation ul li i {border-radius:100px;position:absolute;width:30px;height:30px;font-size:14px;line-height:30px;background:#eee;color:#666}
+.article_right_box .article_operation ul li i.fa-star {top:12px;left:-6px;font-size:16px;}
+.article_right_box .article_operation ul li i.fa-heart {top:12px;right:-6px}
+.article_right_box .article_operation ul li p {width:100%;text-align:center;overflow:hidden;padding:5px 0}
+.article_right_box .article_operation ul li p a {display:block;width:100%;height:100%;}
+.article_right_box .article_operation ul li p span {display:block}
+.article_right_box .article_operation ul li p em {font-weight: bold;}
+.article_right_box .article_operation ul li:hover {background:#ddd}
+.article_right_box .article_operation ul li:hover i {background:#ddd}
+.article_right_box .article_operation ul li.active i {color:#C51421}
+
+}
+
+
+@media screen and (max-width: 1199px) { 
+.pageMain {margin-top:0!important}
+header #menuBtn {display:none!important}
+header #back {float:left;display:block!important;line-height:50px;font-size:20px;margin-left:20px;}
+.articleBox {width:100%;padding:0;background:#fff}
+.articleBox .articleTitle {overflow: hidden;margin:0 10px 0 20px;padding-bottom:10px}
+.articleBox .articleTitle h1 {font-size:16px;font-weight: bold;line-height:22px;padding:20px 0 20px 0}
+.articleBox .articleContent {padding:0 20px;}
+.articleBox .articleContent img {display: block;padding: 0;overflow:hidden;max-width: 100%;height: auto;position: relative;left: 50%;transform: translateX(-50%);-ms-transform: translateX(-50%);-moz-transform: translateX(-50%);-webkit-transform: translateX(-50%);-o-transform: translateX(-50%);cursor: pointer;}
+
+.article_right_box {display:none}
+
+}
+
+
+
+
+
+
+
+/* global */
+
+
+.articleBox .articleTitle .info {float:left;width:100%;height:30px;overflow:hidden;text-align:right}
+.articleBox .articleTitle .info li {float:left;display:inline-block;line-height:30px;margin-right:20px;font-size:12px;color:#777}
+.articleBox .articleTitle .info li i {margin-right:3px}
+.articleBox .articleTitle .info li a {text-decoration:underline;}
+
+.articleBox .articleContent blockquote {border-top:1px solid #ddd;padding:10px;background:#eee;color:#666;margin-bottom:20px;padding:10px;}
+.articleBox .articleContent p {line-height:26px;line-height:2;font-size:16px;margin-bottom:10px;}
+.articleBox .articleContent h2 {font-size:18px;font-weight: bold;line-height:26px;border-left:5px solid #E31726;padding-left:5px;margin:20px 0}
+.articleBox .articleContent h3 {font-size:16px;font-weight: bold;line-height:24px;margin:20px 0}
+.articleBox .articleContent b,.articleBox .articleContent strong {font-size:16px;}
+.articleBox .articleContent p a {color:#E31726!important}
+/* tag */
+.articleBox .articleContent .tag {width:100%;overflow:hidden;padding:10px 0;text-align:center;margin-bottom:50px;}
+.articleBox .articleContent .tag li {display:inline-block;}
+.articleBox .articleContent .tag li a  {display:inline-block;font-size:12px;border-radius: 50px;padding:3px 10px;margin:0 10px 10px 0;background: #ddd;}
+.articleBox .articleContent .tag li a:hover {background:#C51421;color:#fff;transition:background 0.5s;transition:color 0.1s;}
+
+/* 打赏 */
+.articleBox .articleContent .pay {width:100%;text-align:center;margin:20px 0 50px 0;}
+.articleBox .articleContent .pay button {width:120px;height:46px;background:#E31726;border:0;border-radius: 5px;color:#fff;cursor:pointer}
+.articleBox .articleContent .pay button:hover {background:#C51421}
+.articleBox .articleContent .pay ul {padding:15px;overflow:hidden;margin-left:20px;}
+.articleBox .articleContent .pay li {display:inline-block;width:40px;height:40px;border-radius: 50px;border:2px solid #fff;margin-left:-20px}
+.articleBox .articleContent .pay li img {width:40px;height:40px;border-radius: 50px;}
+/* 分享举报 */
+.articleBox .art_Public {margin:0 10px;border-top:1px solid #ddd;background:#f9f9f9;padding:20px 0;overflow:hidden}
+.articleBox .art_Public .report {float:left;border:1px solid #ddd;text-align:right;font-size:12px;color:#777;line-height:40px;margin-left:20px;width:100px;border-radius: 100px;text-align:center;background:#eee}
+.articleBox .art_Public .report i {font-size:16px;color:#666;margin-right:3px;}
+.articleBox .art_Public .share {float:right;width:80%}
+.articleBox .art_Public .share ul {float:right;margin:0 20px;overflow:hidden}
+.articleBox .art_Public .share li {float:left;width:40px;line-height:40px;height:40px;background:#eee;border-radius: 50px;text-align:center;margin:0 10px 0 0;font-size:16px;}
+.articleBox .art_Public .share li.wx:hover {background:#3FB743;color:#fff}
+.articleBox .art_Public .share li.wb:hover {background:#EE4B4B;color:#fff}
+.articleBox .art_Public .share li.qq:hover {background:#1C84C1;color:#fff}
+.articleBox .art_Public .share li.more {float:right;width:80px;line-height:40px;font-size:12px;margin-right:0}

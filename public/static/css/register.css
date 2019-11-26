@@ -1,0 +1,11 @@
+.aboutTop {width:100%;height:200px;background:#0a64a4;padding-top:100px;}
+.topMain {width:1200px;margin:0 auto}
+.topMain h1 {font-size:50px;color:#fff;padding-bottom:20px;}
+.topMain p {font-size:20px;color:#fff}
+.topMain span {font-size:14px;color:#fff}
+.aboutMenu {width:100%;margin:0 auto;background:#074878;overflow:hidden}
+.aboutMenu ul {width:1200px;margin:0 auto}
+.aboutMenu li {float:left;}
+.aboutMenu li a {display:inline-block;height:40px;line-height:40px;padding:0 20px;color:#fff}
+.aboutMenu li.active a {}
+.aboutMain {float:right;width:1200px;height:500px;border-radius:10px;}

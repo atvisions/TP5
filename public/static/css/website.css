@@ -1,0 +1,92 @@
+
+@media screen and (min-width: 1200px) { 
+/*
+mod_pc style
+*/
+.websiteBox {width:1200px;background:#fff;border-radius:10px;min-height:450px;border-top:1px solid #ccc;padding-bottom:10px;}
+.websiteBox .title {overflow:hidden;line-height:50px;margin-top:10px;}
+.websiteBox .title h2 {float:left;font-size:22px;font-weight:bold;padding-left:20px;}
+.websiteBox .title span {float:right;margin-right:20px}
+.websiteBox ul {display:-webkit-flex;display:-moz-flex;display:flex;flex-flow: row wrap;padding:0 5px 0 10px}
+.websiteBox ul li {width:0;min-height:105px;-webkit-flex:0 0 16%;-moz-flex:0 0 16%;flex:0 0 16%;background:#fff;border:1px solid #ccc;margin:10px 7px;transition:all 0.5s;-webkit-transition:all 0.5s;-ms-transition:all 0.5s;border-radius: 5px;padding:15px;position: relative;z-index: 990;}
+.websiteBox ul li:hover {-webkit-transform:translateY(-10px);-moz-transform:translateY(-10px);-ms-transform:translateY(-10px);-o-transform:translateY(-10px);transform:translateY(-10px);box-shadow: 0 0 10px #999;z-index:999}
+.websiteBox ul li img {float:left;border-radius: 50px;}
+.websiteBox ul li .webName  {width:calc(100% - 40px);margin-left:40px;padding-left:20px}
+.websiteBox ul li .webName h3 {line-height:24px;font-weight:bold}
+.websiteBox ul li .webName span {display:block;width:60px;height:12px;background:url(../images/star.gif) 0 0}
+.websiteBox ul li .webName span i {display:block;height:12px;background:url(../images/star.gif) 0 12px}
+.websiteBox ul li .webName span .star_5 {width:60px;}
+.websiteBox ul li .webName span .star_4 {width:48px;}
+.websiteBox ul li .webName span .star_3 {width:36px;}
+.websiteBox ul li .webName span .star_2 {width:24px;}
+.websiteBox ul li .webName span .star_1 {width:12px;}
+.websiteBox ul li p {width:calc(100%-20px);height:40px;line-height:40px;background:#f9f9f9;margin-top:20px;text-align:center;overflow:hidden;padding:0 10px}
+.websiteBox ul li:hover em .fa {display:block}
+.websiteBox ul li em {position:absolute;top:15px;right:15px;cursor:pointer}
+.websiteBox ul li em .fa.like {display:block;color:#C51421}
+.websiteBox ul li em .fa {display:none}
+.websiteBox ul a {display:none;width:calc(100% - 30px);height:40px;line-height:40px;position:absolute;bottom:15px;background:#E31726;color:#fff;text-align:center}
+.websiteBox ul li:hover a {display:block}
+.websiteBox ul li:hover p {display:none}
+.websiteBox ul li:hover .textBox {display:block}
+.websiteBox ul li .textBox {display:none;color:#eee;width:100%;position:absolute;left:0%;top:100%}
+.websiteBox ul li .textBox span {background:#333;height:80%;padding:10px;display:inline-block;font-size:12px;margin-top:10px;border-radius: 5px;text-indent:24px;overflow:hidden}
+.websiteBox ul li .textBox .arrow {position:absolute;color:#333;top:1px;left:50%}
+/* menuMain */
+
+.menuMain {width:1200px;padding:20px 0;margin:0 auto;height:40px;}
+.menuMain .category {float:left;}
+.menuMain .category li {float:left;margin-right:20px;}
+.menuMain .category li a {display:inline-block;padding:3px 15px;height:28px;line-height:28px;border-radius: 5px;background:#ddd;}
+.menuMain .category li.active a {background:#E31726;color:#fff}
+.menuMain .crumbs {float:left;}
+.menuMain .crumbs li {display:inline-block;margin:0 10px}
+.menuMain .crumbs li i {margin-right:5px;height:20px;line-height:20px;text-align:center;font-size:12px;width:20px;background:#333;color:#fff;border-radius: 50px;}
+.menuMain .apply {float:right;width:80px;text-align:center;height:28px;line-height:28px;border-radius: 5px;border:0;background:#E31726;color:#fff;cursor:pointer}
+.menuMain .apply:hover {background:#C51421}
+.menuMain .num {float:right;padding:5px 10px;height:28px;line-height:28px;font-size:14px;margin-top:-5px;}
+.menuMain .num strong {font-family: Tahoma!important;color:#C51421}
+#navFixed {position:fixed;left: 50%;margin-left: 620px;top:152px;}
+#navFixed ul {width:88px;border-radius:5px;background:#fff;padding:4px 0}
+#navFixed li {position:relative;background:#fff;width:88px;left:-4px;line-height:30px;text-align:center;color:#666;margin:2px 0 2px 4px;font-size:12px;overflow:hidden}
+#navFixed li.active {margin-left:0;background:#E31726;color:#fff;border-left:4px solid #C51421;border-right:4px solid #C51421;box-shadow: 0 0 3px #333;border-radius: 5px;}
+#navFixed li.active:hover {background:#E31726;color:#fff;border-radius: 5px;box-shadow: 0 0 3px #333;}
+#navFixed li:hover {background:#fff;color:#333;cursor:pointer;background:#fff;box-shadow: 0 0 10px #999;}
+#navFixed #tops {margin-top:5px;width:88px;font-size:14px;height:40px;border-radius:5px;background:#fff;text-align:center;line-height:40px;transition:all 0.5s ease;}
+#navFixed #tops:hover {background:#fff;color:#C51421;box-shadow: 0 0 10px #999;cursor:pointer}
+} 
+
+@media screen and (max-width: 1199px) { 
+/*
+mod_mobi style
+*/
+/* menuMain */
+.menuMain .category {float:left;width:100%;background:#fff;position:relative;line-height:36px;height:36px;padding:5px 0;display: -webkit-box;overflow-x: scroll;-webkit-overflow-scrolling:touch}
+.menuMain .category::-webkit-scrollbar{display:none}		
+.menuMain .category ul {width:auto;margin:0 10px;display: block; overflow: hidden; white-space:nowrap;}
+.menuMain .category li {display: inline-block;margin-right:20px;box-sizing: border-box;}
+.menuMain .category li a {display:inline-block;padding:3px 5px;height:28px;line-height:28px;}
+.menuMain .category li.active a {background:#eee;border-radius: 5px;padding:0 10px}
+.menuMain .style {display:none}
+.websiteBox .title {display:none}
+.websiteBox {width:100%;background:#fff;min-height:450px;padding-bottom:10px;overflow:hidden}
+.websiteBox ul {width:100%;}
+.websiteBox ul li {display:block;background:#fff;margin:20px;padding:15px ;position: relative;border-bottom:3px solid #eee;overflow:hidden}
+.websiteBox ul li img {float:left;border-radius: 50px;}
+.websiteBox ul li .webName  {width:calc(100% - 40px);margin-left:40px;margin-top:5px;padding-left:20px}
+.websiteBox ul li .webName h3 {line-height:26px;font-weight:bold}
+.websiteBox ul li .webName span {display:block;width:60px;height:12px;background:url(../images/star.gif) 0 0}
+.websiteBox ul li .webName span i {display:block;height:12px;background:url(../images/star.gif) 0 12px}
+.websiteBox ul li .webName span .star_5 {width:60px;}
+.websiteBox ul li .webName span .star_4 {width:48px;}
+.websiteBox ul li .webName span .star_3 {width:36px;}
+.websiteBox ul li .webName span .star_2 {width:24px;}
+.websiteBox ul li .webName span .star_1 {width:12px;}
+.websiteBox ul li p {display:none}
+.websiteBox ul li em .fa {display:block}
+.websiteBox ul li em {position:absolute;top:30px;right:30px;cursor:pointer;font-size:14px;}
+.websiteBox ul li em .fa.like {display:block;color:#C51421}
+.websiteBox ul li .textBox {float:left;width:calc(100% - 20px);line-height:25px;max-height:120px;overflow:hidden;margin-top:20px;background:#eee;padding:10px;border-radius: 20px 5px 10px 5px;}
+.websiteBox ul li .textBox i {display:none}
+.websiteBox ul a {float:right;border-radius:50px;width:50px;height:50px;line-height:50px;background:#E31726;color:#fff;text-align:center;margin:-35px -20px 0 0;border:5px solid #fff}
+} 

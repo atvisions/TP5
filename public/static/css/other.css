@@ -1,0 +1,151 @@
+@media screen and (min-width: 1200px) {
+
+	
+
+	#regPage {
+		width: 100%;
+		height: 100%;1
+	}
+
+	#regMain {
+		width: 400px;
+		padding: 50px 0;
+		background: #fff;
+		border-radius: 10px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -300px;
+		margin-left: -200px;
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	}
+
+}
+	html,
+	body {
+		width: 100%;
+		height: 100%
+	}
+	
+	h1 {
+		display: block;
+		font-size: 2em;
+		-webkit-margin-before: 0.67em;
+		-webkit-margin-after: 0.67em;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		font-weight: bold;
+	}
+
+	a {
+		color: #333;
+		font-size: 14px;
+		/* text-decoration: none; */
+		margin: 15px 0;
+	}
+
+	.social-container {
+		margin: 20px 0;
+
+	}
+
+	.social-container a {
+		float: left;
+		border-radius: 50%;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 15px;
+		height: 40px;
+		width: 40px;
+		font-size: 18px;
+		background:#eee
+	}
+	.social-container a.icowx:hover {
+		background:#55AD23;
+		color:#fff;
+	}
+	.social-container a.icoqq:hover {
+		background:#1294D3;
+		color:#fff;
+	}
+	.social-container a.icowb:hover {
+		background:#DA251C;
+		color:#fff;
+	}
+	.link {
+		width: 100%;
+		overflow: hidden
+	}
+
+	.link .reg {
+		float: left;
+	}
+
+	.link .homepage {
+		float: right;
+	}
+
+	button {
+		width: 100%;
+		border-radius: 5px;
+		border: 0;
+		background-color: #E31726;
+		color: #FFFFFF;
+		font-size: 12px;
+		font-weight: bold;
+		padding: 12px 45px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: transform 80ms ease-in;
+	}
+
+	button:active {
+		transform: scale(0.95);
+	}
+
+	button:hover {
+		cursor: pointer
+	}
+
+	form {
+		background-color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding: 0 50px;
+		height: 100%;
+		text-align: center;
+	}
+
+	input {
+		background-color: #eee;
+		border: none;
+		padding: 12px 15px;
+		margin: 8px 0;
+		width: 100%;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+	
+	@media screen and (max-width: 1199px) {
+		#regPage {
+			width: 100%;
+			height: 100%;
+			background: #fff
+		}
+		h1 {margin-top:50px;}
+		.link {
+			position:absolute;
+			width: 50%;
+			overflow: hidden;
+			bottom:30px;
+		}
+		.link a {
+			color:#333
+		}
+		
+	}
